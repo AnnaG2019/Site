@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Stix';
+    src: url('../fonts/18637-webfont.woff2') format('woff2'),
+         url('../fonts/18637-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Akrobat Thin';
+    src: url('../fonts/Akrobat-thin.woff2') format('woff2'), 
+         url('../fonts/Akrobat-thin.woff') format('woff'), 
+         url('../fonts/Akrobat-thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Akrobat ExtraLight';
+    src: url('../fonts/Akrobat-extra-light.woff2') format('woff2'), 
+         url('../fonts/Akrobat-extra-light.woff') format('woff'), 
+         url('../fonts/Akrobat-extra-light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Akrobat Light';
+    src: url('../fonts/Akrobat-light.woff2') format('woff2'), 
+         url('../fonts/Akrobat-light.woff') format('woff'), 
+         url('../fonts/Akrobat-extra-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Akrobat Regular';
+    src: url('../fonts/Akrobat.woff2') format('woff2'), 
+         url('../fonts/Akrobat.woff') format('woff'), 
+         url('../fonts/Akrobat.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Akrobat SemiBold';
+    src: url('../fonts/Akrobat-semibold.woff2') format('woff2'), 
+         url('../fonts/Akrobat-semibold.woff') format('woff'), 
+         url('../fonts/Akrobat-semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Akrobat Bold';
+    src: url('../fonts/Akrobat-bold.woff2') format('woff2'), 
+         url('../fonts/Akrobat-bold.woff') format('woff'), 
+         url('../fonts/Akrobat-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Akrobat ExtraBold';
+    src: url('../fonts/Akrobat-extra-bold.woff2') format('woff2'), 
+         url('../fonts/Akrobat-extra-bold.woff') format('woff'), 
+         url('../fonts/Akrobat-extra-bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Akrobat Black';
+    src: url('../fonts/Akrobat-black.woff2') format('woff2'), 
+         url('../fonts/Akrobat-black.woff') format('woff'), 
+         url('../fonts/Akrobat-black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
