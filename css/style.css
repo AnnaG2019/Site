@@ -26,6 +26,11 @@ h2 {
     letter-spacing: 6px;
     font-size: 3.5em;
 }
+h3 {
+	font-family: 'Stix';
+	font-size: 2.5em;
+	color: #99c1c1;
+}
 h4 {
 	font-family: 'Akrobat SemiBold';
 	font-size: 1.512em;
@@ -37,7 +42,6 @@ h4 {
 
 .header {
     position: relative;
-    
 }
 .header__container {
 	display: flex;
@@ -72,6 +76,7 @@ h4 {
 	-moz-box-shadow: 0 5px 20px rgba(0, 0, 0, .15);
     top: -10px;
     left: -16.5vw;
+    z-index: 3;
 }
 
 .header__menu li {
@@ -107,6 +112,7 @@ h4 {
 }
 .header__menu__list>li:hover .header__sub-menu__list {
     display: block;
+
 }
 
 .header__sub-menu__list {
@@ -124,6 +130,7 @@ h4 {
     -o-transition: all .5s ease-out;
     -webkit-transition: all .5s ease-out;
 	padding-top: 10px;
+	font-family: 'Akrobat';
 }
 .header__sub-menu__list>li:hover {
 	font-family: 'Akrobat Bold';
@@ -522,7 +529,7 @@ h4 {
 /*-----------Start section-four-----------*/
 
 .section-four {
-	padding: 0 10vw 40px 15vw;
+	padding: 0 10vw 0 15vw;
 	box-shadow: 0 -50px 55px rgba(255, 255, 255, 1) inset,
 	            0 2px 20px rgba(0, 0, 0, 0.1) inset;
 	-webkit-box-shadow: 0 -50px 55px rgba(255, 255, 255, 1) inset,
@@ -531,8 +538,14 @@ h4 {
 	                 0 2px 20px rgba(0, 0, 0, 0.1) inset;
 	background: url(../img/Фон_section-four_1920.png) no-repeat;
 	background-size: cover;
-
-
+	position: relative;
+}	
+.section-four::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+	background: linear-gradient(to bottom, transparent, #fff 90%);
 }
 .section-four__conteiner {
 	display: flex;
@@ -589,9 +602,12 @@ h4 {
     background-position: bottom left;
     background-size: contain;
 }	
+
+
 .section-four__img {
 	margin: 0 0 0 20px;
 }
+
 .section-four__img img {
 	max-width: 100%;
 	max-height: 100%;
@@ -971,12 +987,24 @@ h4 {
 }
 .section-seven__top {
 	padding: 125px 17vw 0 17vw;
+	position: relative;
 }
 .section-seven__title {
     text-align: center;
     color: #d19faa;
 }    
+.section-seven__tooltip{
+	border: 1px solid #000;
+	/*display: none;*/
+	position: absolute;
+	width: 827px;
+	height: 647px;
 
+}
+/*.section-seven__tooltip__before {}*/
+/*.section-seven__tooltip__after {}*/
+/*.tooltip__subtitle {}*/
+/*.tooltip__cotent {}*/
 
 .section-seven__wrap {
 	display: flex;
@@ -1226,6 +1254,7 @@ h4 {
     height: 30px;
 }
 
+
 /*-----------End header-----------*/
 
 /*-----------Start section-one-----------*/
@@ -1395,7 +1424,7 @@ h4 {
 /*-----------Start section-four-----------*/
 
 .section-four {
-	padding: 0 10vw 15px 15vw;
+	padding: 0 10vw 0 15vw;
 	background: url(../img/Фон_section-four_1600.png) no-repeat;
 	background-size: cover;
 }
@@ -1424,7 +1453,7 @@ h4 {
 
 .section-four__img {
 	width: 580px;
-	height: 600px;
+	/*height: 600px;*/
 	margin: 10px 0 0 0;
 }
 
@@ -1729,6 +1758,7 @@ h2 {
 	letter-spacing: 4px;
     font-size: 2.4em;
 }
+
 h4 {
 	font-size: 1em;
 	letter-spacing: 1px;
@@ -1809,6 +1839,7 @@ h4 {
 	width: 28px;
     height: 28px;
 }
+
 
 /*-----------End header-----------*/
 
@@ -2007,7 +2038,7 @@ h4 {
 
 .section-four__img {
 	margin: 0 0 0 20px;
-	height: 530px;
+	/*height: 530px;*/
 }
 .section-four__img img {
 	max-width: 100%;
@@ -2284,7 +2315,6 @@ h4 {
 
 /*-----------Start footer-----------*/
 
-
 .footer {
     padding: 15px 0 20px 35px;
     height: 57px;
@@ -2301,3 +2331,145 @@ h4 {
 
 /*-----------End footer-----------*/
 }
+
+
+/*-------------------------------------------------------------------------*/
+/*------------Cases------------*/
+
+.header__link {
+	position: absolute;
+    top: 45px;
+    left: 16vw;
+    font-size: 1.2em;
+}
+.header__link__home:hover {
+	color: #99c1c1;
+	text-decoration: underline;
+}
+.header__link__services:hover {
+	color: #99c1c1;
+	text-decoration: underline;
+}
+.section-cases {
+	background: url(../img/Фон_Кейсы_1920.png) no-repeat;
+	background-size: cover;
+	padding-top: 30px; 
+	box-shadow: 0 -20px 35px -20px rgba(0, 0, 0, .1); /*Внешняя тень*/
+	-webkit-box-shadow: 0 -20px 35px -20px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 -20px 35px -20px rgba(0, 0, 0, .1);
+}
+.section__cases__wrap {
+	margin-bottom: 35px;
+}
+.section__cases__title {
+	text-align: center;
+    color: #99c1c1; 
+    margin: 30px 0 50px 0;
+}
+/*.section__cases__wrap {}*/
+.section__cases__item {
+	width: 820px;
+	margin: 0 auto;
+	padding: 20px 0 80px 0;
+	border-top: 1.2px dotted #939496; /*Линия границы*/ 
+}
+.section__cases__item h3 {
+	margin-bottom: 30px;
+
+}
+.section__cases__item p {
+	font-size: 1.7em;
+	line-height: 30px;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+.section__cases__item a {
+	font-size: 1.26em;
+	font-family: 'Akrobat SemiBold';
+	letter-spacing: 1.5px;
+	display: inline-block;
+	float: right;
+	margin-right: 25px;
+}
+.section__cases__item a:hover {
+	color: #99c1c1;
+}
+@media screen and (max-width: 1600px) {
+.header__link {
+	top: 35px;
+    left: 17vw;
+    font-size: .9em;
+}
+.section-cases {
+	background: url(../img/Фон_Кейсы_1600.png) no-repeat;
+	padding-top: 20px; 
+}
+.section__cases__wrap {
+	margin-bottom: 60px;
+}
+.section__cases__title {
+	margin: 30px 0 40px 0;
+}
+.section__cases__item {
+	width: 700px;
+	padding: 20px 0 70px 0;
+}
+.section__cases__item h3 {
+	margin-bottom: 20px;
+	font-size: 2.3em;
+}
+.section__cases__item p {
+	font-size: 1.4em;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+.section__cases__item a {
+	font-size: 1.15em;
+	letter-spacing: 1.5px;
+	margin-right: 20px;
+}
+
+}
+@media screen and (max-width: 1366px) {
+	.header__link {
+	top: 33px;
+    left: 14vw;
+    font-size: .7em;
+}
+.section-cases {
+	background: url(../img/Фон_Кейсы_1366.png) no-repeat;
+	padding-top: 15px; 
+}
+.section__cases__wrap {
+	margin-bottom: 50px;
+}
+.section__cases__title {
+	margin: 10px 0 20px 0;
+}
+.section__cases__item {
+	width: 580px;
+	padding: 12px 0 55px 0;
+}
+.section__cases__item h3 {
+	margin-bottom: 12px;
+	font-size: 1.9em;
+}
+.section__cases__item p {
+	font-size: 1.2em;
+	line-height: 25px;
+	margin-bottom: 15px;
+}
+.section__cases__item a {
+	font-size: 1em;
+	letter-spacing: 1px;
+	margin-right: 17px;
+}
+}
+
+
+/*-------------------------------------------------------------------------*/
+/*------------Profile feeding------------*/
+
+
+
+
